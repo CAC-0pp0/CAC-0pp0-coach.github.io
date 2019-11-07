@@ -1,5 +1,9 @@
 ...:::  [讲师介绍](coaches.md)\|[培训要求](rules.md)\|[练习需求](https://cac-tech-coach.github.io/NewsClientSpecs)\|[练习API](https://cac-tech-coach.github.io/NewsClientAPI/)\|[度量数据](http://139.198.4.126:8081/#/)\|[积分榜](https://coda.io/d/CAC-OPPO_dWBwjkLuEXF/_subOs)\|[计分规则](scoring.md)\|[CI大屏](https://run.buildmonitor.io/?import=%5B%7B%22Connector%22%3A%22BuildMonitorTravis3%22%2C%22Name%22%3A%22CAC%40OPPO%22%2C%22ServerUrl%22%3A%22https%3A%2F%2Fapi.travis-ci.org%2F%22%2C%22Username%22%3A%22qinyu%22%2C%22Token%22%3A%22mPcuXvs0-wx4Z8XCmI2K1A%22%2C%22ImportantRefs%22%3A%22(master%7Cdevelop%7Crelease%2F(.*))%22%2C%22OnlyActive%22%3Atrue%2C%22Interval%22%3A%221000%22%2C%22ConfigUrl%22%3A%22https%3A%2F%2Fbuildmonitor.gitlab.io%2FTravisConnector%2Fconfig.json%22%7D%5D)\|[参考资料](references.md)  :::...
 
+# 单元测试技巧&规范
+
+[https://github.com/qinyu/junit-docs/](https://github.com/qinyu/junit-docs/)
+
 # 目标
 
 建立对敏捷的基本认知。通过 8 小时左右的示例项目实操演练，掌握持续交付与质量内建所包括的关键技术实践，学会如何引导团队在 Android 新应用、新代码中逐步实现持续交付和质量内建。
