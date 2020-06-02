@@ -8,10 +8,6 @@ permalink: /coaches/
 
 **黄俊彬**，ThoughtWorks 高级咨询师，6 年移动端开发经验，在云存储、物联网及银行金融有丰富的经验，擅长移动应用性能优化、自动化测试、架构设计及组件化。
 
-**王鑫**，ThoughtWorks 高级咨询师，5 年移动开发经验，在移动开发领域的平台化技术、性能优化、架构设计、CI/CD方面具备丰富的经验。
-
-**毛俊**，ThoughtWorks 高级咨询师，拥有Framework到App垂直开发的经验，是敏捷实践的狂热拥护者。
-
 
 github repo
 [![Build Status](https://travis-ci.org/CAC-0pp0/CACOreo.svg?branch=master)](https://travis-ci.org/CAC-0pp0/CACOreo)
@@ -21,7 +17,6 @@ github repo
 |--|--|--|
 |覃宇|qinyu|qinyusuain@gmail.com|
 |黄俊彬|junbin1011|junbin1011@163.com|
-|毛俊|komamj|junmaokoma@gmail.com|
-|王鑫|xinyer||
+
 
 [返回](./index.md)
