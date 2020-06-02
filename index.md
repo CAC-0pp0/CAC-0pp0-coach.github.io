@@ -1,14 +1,11 @@
-...:::  [讲师介绍](coaches.md)\|[培训要求](rules.md)\|[练习需求](https://cac-tech-coach.github.io/NewsClientSpecs)\|[练习API](https://cac-tech-coach.github.io/NewsClientAPI/)\|[度量数据](http://139.198.4.126:8081/#/)\|[积分榜]()\|[计分规则](scoring.md)\|[参考资料](references.md)  :::...
+...:::  [培训要求](rules.md)\|[练习需求](https://cac-tech-coach.github.io/NewsClientSpecs)\|[练习API](https://cac-tech-coach.github.io/NewsClientAPI/)\|[度量数据](http://139.198.4.126:8081/#/)\|[计分规则](scoring.md)\|[积分榜]()\|[参考资料](references.md)\|[讲师介绍](coaches.md)  :::...
 
-# 单元测试技巧&规范
-
-[https://github.com/qinyu/junit-docs/](https://github.com/qinyu/junit-docs/)
 
 # 目标
 
 建立对敏捷的基本认知。通过 8 小时左右的示例项目实操演练，掌握持续交付与质量内建所包括的关键技术实践，学会如何引导团队在 Android 新应用、新代码中逐步实现持续交付和质量内建。
 
-# 小组划分
+# 小组竞赛
 
 参训学员以小组为单位，在三天的培训时间里，根据讲师所讲收的内容和布置的任务，采用正确的技术实践完成示例项目的持续演练。在培训的最后一天下午，以小组为单位展示三天所学内容在示例项目中的运用，进行PK。最终根据小组互动表现、度量数据、以及打擂展示的[**综合得分**](scoring.md)确定[**最终排名**]()。
 
