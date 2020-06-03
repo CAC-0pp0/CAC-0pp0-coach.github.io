@@ -22,7 +22,7 @@
 
 本次培训有8小时左右的 Android 编码演练，学员需要提前准备好Android开发环境。要求如下：
 
-1. **!!请自带笔记本电脑!!**
+1. **❗请自带笔记本电脑❗**
 1. 安装 JDK 8
 2. 安装最新 Android SDK（API Level 29+）
 3. 安装最新 Android Studio（3.6+）
@@ -38,7 +38,7 @@
 1. 熟悉新闻客户端的**[用户故事](https://cac-tech-coach.github.io/NewsClientSpecs)**。
 2. 熟悉新闻客户端要使用的**[服务 API](https://cac-tech-coach.github.io/NewsClientAPI/)**。
 
-## 知识准备（建议）
+## 知识准备
 
 1. 学习 Android Components，了解最新的 Android 分层架构风格，请参考：
    - [https://codelabs.developers.google.com/codelabs/android-room-with-a-view]()  
