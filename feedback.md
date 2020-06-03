@@ -10,4 +10,4 @@ permalink: /feedback/
 
 ![培训调查文件](./feedback.png)
 
-或访问：[https://jinshuju.net/f/q750Ro]()
+或访问：https://jinshuju.net/f/q750Ro
