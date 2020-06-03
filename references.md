@@ -6,8 +6,6 @@ permalink: /references/
 
 # 基础知识
 
-1. 单元测试技巧&规范:
-   - [https://github.com/qinyu/junit-docs/](https://github.com/qinyu/junit-docs/)
 1. 主干开发+分支发布：
    - [https://trunkbaseddevelopment.com/](https://trunkbaseddevelopment.com/)
    - [https://insights.thoughtworks.cn/gitflow-consider-harmful/](https://insights.thoughtworks.cn/gitflow-consider-harmful/)
