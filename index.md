@@ -7,7 +7,7 @@
 
 # 小组竞赛
 
-参训学员以小组为单位，在三天的培训时间里，根据讲师所讲收的内容和布置的任务，采用正确的技术实践完成示例项目的持续演练。在培训的最后一天下午，以小组为单位展示三天所学内容在示例项目中的运用，进行PK。最终根据小组互动表现、度量数据、以及打擂展示的[**综合得分**](scoring.md)确定[**最终排名**]()。
+参训学员以小组为单位，在三天的培训时间里，根据讲师所讲收的内容和布置的任务，采用正确的技术实践完成示例项目的持续演练。在培训的最后一天下午，以小组为单位展示三天所学内容在示例项目中的运用，进行PK。最终根据小组互动表现、度量数据、以及打擂展示的[**综合得分**](scoring.md)确定[**最终排名**](**综合得分**](scoring.md)确定[**最终排名**)。
 
 # 准备工作
 
@@ -41,13 +41,13 @@
 ## 知识准备
 
 1. 学习 Android Components，了解最新的 Android 分层架构风格，请参考：
-   - https://codelabs.developers.google.com/codelabs/android-room-with-a-view 
-   - https://codelabs.developers.google.com/codelabs/android-room-with-a-view-kotlin/
+   - [https://codelabs.developers.google.com/codelabs/android-room-with-a-view](https://codelabs.developers.google.com/codelabs/android-room-with-a-view)  
+   - [https://codelabs.developers.google.com/codelabs/android-room-with-a-view-kotlin/](https://codelabs.developers.google.com/codelabs/android-room-with-a-view-kotlin/)
 2. 学习 Android 测试知识，了解可以使用的 Android 测试库，请参考：
-   - https://codelabs.developers.google.com/codelabs/android-testing
+   - [https://codelabs.developers.google.com/codelabs/android-testing](https://codelabs.developers.google.com/codelabs/android-testing)
 3. 学习 Kotlin（本次培训演示将全部使用 Koltin），请参考：
-   - https://kotlinlang.org/docs/reference/
-   - https://www.udacity.com/course/developing-android-apps-with-kotlin--ud9012
+   - [https://kotlinlang.org/docs/reference/](https://kotlinlang.org/docs/reference/)
+   - [https://www.udacity.com/course/developing-android-apps-with-kotlin--ud9012](https://www.udacity.com/course/developing-android-apps-with-kotlin--ud9012)
 
 
 

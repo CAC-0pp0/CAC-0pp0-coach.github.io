@@ -6,32 +6,34 @@ permalink: /references/
 
 # 基础知识
 
+1. 单元测试技巧&规范:
+   - [https://github.com/qinyu/junit-docs/](https://github.com/qinyu/junit-docs/)
 1. 主干开发+分支发布：
-   - https://trunkbaseddevelopment.com/
-   - https://insights.thoughtworks.cn/gitflow-consider-harmful/
-2. 持续集成：https://www.infoq.cn/article/ci-theory-practice/
-3. 单元测试术语、模式、坏味道...：http://xunitpatterns.com/
+   - [https://trunkbaseddevelopment.com/](https://trunkbaseddevelopment.com/)
+   - [https://insights.thoughtworks.cn/gitflow-consider-harmful/](https://insights.thoughtworks.cn/gitflow-consider-harmful/)
+2. 持续集成：[https://www.infoq.cn/article/ci-theory-practice/](https://www.infoq.cn/article/ci-theory-practice/)
+3. 单元测试术语、模式、坏味道...：[http://xunitpatterns.com/](http://xunitpatterns.com/)
 4. 结对编程：
-   - https://insights.thoughtworks.cn/pair-programming/
-   - https://codingstyle.cn/topics/244
-   - https://insights.thoughtworks.cn/seven-skills-about-pair-programming/
+   - [https://insights.thoughtworks.cn/pair-programming/](https://insights.thoughtworks.cn/pair-programming/)
+   - [https://codingstyle.cn/topics/244](https://codingstyle.cn/topics/244)
+   - [https://insights.thoughtworks.cn/seven-skills-about-pair-programming/](https://insights.thoughtworks.cn/seven-skills-about-pair-programming/)
 5. 测试驱动开发：
-   - http://insights.thoughtworkers.org/talk-about-tdd-again/
-   - https://insights.thoughtworks.cn/talk-about-tdd-again-2/
-   - https://insights.thoughtworks.cn/when-we-talk-about-bdd/
-6. 代码检视：https://insights.thoughtworks.cn/code-review/
-7. 重构：https://insights.thoughtworks.cn/principles-of-refactoring/
-8. 质量内建：https://insights.thoughtworks.cn/professional/
-9. 代码覆盖率：https://insights.thoughtworks.cn/code-coverage-2/
+   - [http://insights.thoughtworkers.org/talk-about-tdd-again/](http://insights.thoughtworkers.org/talk-about-tdd-again/)
+   - [https://insights.thoughtworks.cn/talk-about-tdd-again-2/](https://insights.thoughtworks.cn/talk-about-tdd-again-2/)
+   - [https://insights.thoughtworks.cn/when-we-talk-about-bdd/](https://insights.thoughtworks.cn/when-we-talk-about-bdd/)
+6. 代码检视：[https://insights.thoughtworks.cn/code-review/](https://insights.thoughtworks.cn/code-review/)
+7. 重构：[https://insights.thoughtworks.cn/principles-of-refactoring/](https://insights.thoughtworks.cn/principles-of-refactoring/)
+8. 质量内建：[https://insights.thoughtworks.cn/professional/](https://insights.thoughtworks.cn/professional/)
+9. 代码覆盖率：[https://insights.thoughtworks.cn/code-coverage-2/](https://insights.thoughtworks.cn/code-coverage-2/)
 10. 单元测试技巧&规范:
-    - https://github.com/qinyu/junit-docs/
-    - https://github.com/qinyu/junit-docs/blob/master/legacy-code.md
+    - [https://github.com/qinyu/junit-docs/](https://github.com/qinyu/junit-docs/)
+    - [https://github.com/qinyu/junit-docs/blob/master/legacy-code.md](https://github.com/qinyu/junit-docs/blob/master/legacy-code.md)
 
 # Android library 速查
 
 ## Truth
 
-https://truth.dev/，更易读更流畅更便利的断言（assert）库，不用记各种 macther，记住`assertThat().`就可以了
+[https://truth.dev/](https://truth.dev/)，更易读更流畅更便利的断言（assert）库，不用记各种 macther，记住`assertThat().`就可以了
 
 app/build.gradle 依赖配置
 ```groovy
@@ -68,7 +70,7 @@ testObserver.assertNotTerminated() // not compulsory, but STRONGLY recommended
 testScheduler.advanceTimeBy(1L, TimeUnit.SECONDS);
 testObserver.assertValueCount(1);// 1 value expected after the initial delay of 1 second
 ```
-参考：https://proandroiddev.com/rxjava-2-unit-testing-tips-207887d3f15c
+参考：[https://proandroiddev.com/rxjava-2-unit-testing-tips-207887d3f15c](https://proandroiddev.com/rxjava-2-unit-testing-tips-207887d3f15c)
 
 ## RxAndroid
 
@@ -118,15 +120,15 @@ mockWebServer.enqueue(
         .setBody(jsonBuffer)
 );
 ```
-参考：https://github.com/square/okhttp/tree/master/mockwebserver
+参考：[https://github.com/square/okhttp/tree/master/mockwebserver](https://github.com/square/okhttp/tree/master/mockwebserver)
 
 ## Espresso
 
-Espresso cheatsheet：https://developer.android.com/training/testing/espresso/cheat-sheet
+Espresso cheatsheet：[https://developer.android.com/training/testing/espresso/cheat-sheet](https://developer.android.com/training/testing/espresso/cheat-sheet)
 
 Espresso Koltin DSL：
- - https://github.com/AdevintaSpain/Barista
- - https://github.com/agoda-com/Kakao
+ - [https://github.com/AdevintaSpain/Barista](https://github.com/AdevintaSpain/Barista)
+ - [https://github.com/agoda-com/Kakao](https://github.com/agoda-com/Kakao)
 
 app/build.gradle 依赖配置
 ``` groovy
@@ -155,7 +157,7 @@ assertDisplayedAtPosition(R.id.list, 0, R.id.text_field, "text");
 
 让`androidTest`中的espresso测试可以放到`test`中执行。
 
-app/build.gradle中的配置，参考：https://medium.com/androiddevelopers/write-once-run-everywhere-tests-on-android-88adb2ba20c5
+app/build.gradle中的配置，参考：[https://medium.com/androiddevelopers/write-once-run-everywhere-tests-on-android-88adb2ba20c5](https://medium.com/androiddevelopers/write-once-run-everywhere-tests-on-android-88adb2ba20c5)
 ```groovy
 android {
     testOptions {
@@ -173,7 +175,7 @@ dependencies {
 }
 ```
 
-不支持 API level 29 的解决方法，参考：http://robolectric.org/configuring/
+不支持 API level 29 的解决方法，参考：[http://robolectric.org/configuring/](http://robolectric.org/configuring/)
 ```properties
 # src/test/resources/com/mycompany/app/robolectric.properties
 sdk=28
