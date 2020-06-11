@@ -29,6 +29,57 @@ permalink: /references/
 
 # Android library 速查
 
+## Coroutine 测试
+
+```kotlin
+@ExperimentalCoroutinesApi
+class NewsViewModelTest {
+    private val testDispatcher = TestCoroutineDispatcher()
+
+    @Rule
+    @JvmField
+    val rule = InstantTaskExecutorRule()
+
+    @Before
+    fun setUp() {
+        Dispatchers.setMain(testDispatcher)
+    }
+
+    @After
+    fun tearDown() {
+        Dispatchers.resetMain()
+        testDispatcher.cleanupTestCoroutines()
+    }
+
+    @Test
+    fun `should get news list when call news repository`() = runBlocking {
+        //given
+        val webApi = mock(NewsApi::class.java)
+        val newsRepository = NewsRepository(webApi)
+        val newsViewModel = NewsViewModel(newsRepository)
+
+        val newsListResponse = mockNewsListResponse()
+
+        `when`(webApi.getNewsListResponse()).thenReturn(newsListResponse)
+
+        //when
+        newsViewModel.loadNewsList()
+
+        //then
+        verify(webApi).getNewsListResponse()
+        assertThat(newsViewModel.newsList.value?.size, `is`(1))
+    }
+
+    private fun mockNewsListResponse(): NewsListResponse {
+        val news = News("OPPO@CAC", "2020-6-11", "", "", "")
+        val mockNewsList = ArrayList<News>()
+        mockNewsList.add(news)
+        val newsListResponse = NewsListResponse(mockNewsList)
+        return newsListResponse
+    }
+}
+```
+
 ## Truth
 
 [https://truth.dev/](https://truth.dev/)，更易读更流畅更便利的断言（assert）库，不用记各种 macther，记住`assertThat().`就可以了
