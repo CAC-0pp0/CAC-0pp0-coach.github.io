@@ -26,7 +26,7 @@ permalink: /references/
 10. 单元测试技巧&规范:
     - [https://github.com/qinyu/junit-docs/](https://github.com/qinyu/junit-docs/)
     - [https://github.com/qinyu/junit-docs/blob/master/legacy-code.md](https://github.com/qinyu/junit-docs/blob/master/legacy-code.md)
-
+11. Kotlin 代码规范检查：[https://detekt.github.io/detekt/](https://detekt.github.io/detekt/)
 # Android library 速查
 
 ## Coroutine 测试
