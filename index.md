@@ -1,6 +1,11 @@
 ...:::  [培训要求](rules.md)\|[练习需求](https://cac-tech-coach.github.io/NewsClientSpecs)\|[练习API](https://cac-tech-coach.github.io/NewsClientAPI/)\|[计分规则](scoring.md)\|[积分榜](https://coda.io/d/CAC-OPPO-20200611_dNQgpPzlG0g/_suVcS#_lujMm)\|[CI看板](http://139.198.15.19:8081/monitor?minTime=2020-6-10)\|[SONAR数据](https://sonarcloud.io/organizations/cac-technnical/projects?search=CAC_)\|[参考资料](references.md)\|[讲师介绍](coaches.md)  :::...
 
 
+|                       |                       |                       |                       |
+| :-------------------: | :-------------------: | :-------------------: | :-------------------: |
+| ![CA](/assets/CA.gif) | ![CS](/assets/CS.gif) | ![CA](/assets/GG.gif) | ![CS](/assets/HT.gif) |
+|          CA           |          CS           |          GG           |          HT           |
+
 # 目标
 
 建立对敏捷的基本认知。通过 8 小时左右的示例项目实操演练，掌握持续交付与质量内建所包括的关键技术实践，学会如何引导团队在 Android 新应用、新代码中逐步实现持续交付和质量内建。
