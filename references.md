@@ -27,7 +27,14 @@ permalink: /references/
     - [https://github.com/qinyu/junit-docs/](https://github.com/qinyu/junit-docs/)
     - [https://github.com/qinyu/junit-docs/blob/master/legacy-code.md](https://github.com/qinyu/junit-docs/blob/master/legacy-code.md)
 11. Kotlin 代码规范检查：[https://detekt.github.io/detekt/](https://detekt.github.io/detekt/)
+
 # Android library 速查
+
+# Android Jetpack Library 速查
+
+[https://developer.android.com/jetpack/androidx/versions](https://developer.android.com/jetpack/androidx/versions)
+
+Android Jetpack 被分成了多个包，哪些功能在哪个包，最新的版本，方便在添加依赖
 
 ## Coroutine 测试
 
