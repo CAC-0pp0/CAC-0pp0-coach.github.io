@@ -28,15 +28,15 @@ permalink: /references/
     - [https://github.com/qinyu/junit-docs/blob/master/legacy-code.md](https://github.com/qinyu/junit-docs/blob/master/legacy-code.md)
 11. Kotlin 代码规范检查：[https://detekt.github.io/detekt/](https://detekt.github.io/detekt/)
 
-# Android library 速查
+# 练习使用的工具速查
 
-# Android Jetpack Library 速查
+## Android Jetpack Library 速查
 
 [https://developer.android.com/jetpack/androidx/versions](https://developer.android.com/jetpack/androidx/versions)
 
 Android Jetpack 被分成了多个包，哪些功能在哪个包，最新的版本，方便在添加依赖
 
-## Coroutine 测试
+## Koltin Coroutine 测试代码片段
 
 ```kotlin
 @ExperimentalCoroutinesApi
@@ -87,24 +87,28 @@ class NewsViewModelTest {
 }
 ```
 
-## Truth
+## Truth断言
 
 [https://truth.dev/](https://truth.dev/)，更易读更流畅更便利的断言（assert）库，不用记各种 macther，记住`assertThat().`就可以了
 
 app/build.gradle 依赖配置
+
 ```groovy
 dependencies {
     testImplementation 'com.google.truth:truth:1.0'
 }
 ```
+
 代码示例
+
 ```java
 assertThat(notificationText).contains("testuser@google.com");
 ```
 
-## RxJava2
+## RxJava2测试代码片段
 
 app/build.gradle 依赖配置
+
 ```groovy
 dependencies {
     implementation 'io.reactivex.rxjava2:rxjava:2.2.11'
@@ -126,11 +130,13 @@ testObserver.assertNotTerminated() // not compulsory, but STRONGLY recommended
 testScheduler.advanceTimeBy(1L, TimeUnit.SECONDS);
 testObserver.assertValueCount(1);// 1 value expected after the initial delay of 1 second
 ```
+
 参考：[https://proandroiddev.com/rxjava-2-unit-testing-tips-207887d3f15c](https://proandroiddev.com/rxjava-2-unit-testing-tips-207887d3f15c)
 
 ## RxAndroid
 
 app/build.gradle 依赖配置
+
 ```groovy
 dependencies {
     implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
@@ -140,6 +146,7 @@ dependencies {
 ## Retrofit
 
 app/build.gradle 依赖配置
+
 ```groovy
 dependencies {
     implementation 'com.squareup.retrofit2:retrofit:2.6.2'
@@ -154,7 +161,8 @@ dependencies {
 }
 ```
 
-Mock retrofit API 的示例代码
+## Retrofit Mock代码片段
+
 ```java
 // mock 服务
 MockWebServer mockWebServer = new MockWebServer();
@@ -176,9 +184,10 @@ mockWebServer.enqueue(
         .setBody(jsonBuffer)
 );
 ```
+
 参考：[https://github.com/square/okhttp/tree/master/mockwebserver](https://github.com/square/okhttp/tree/master/mockwebserver)
 
-## Espresso
+## Espresso相关
 
 Espresso cheatsheet：[https://developer.android.com/training/testing/espresso/cheat-sheet](https://developer.android.com/training/testing/espresso/cheat-sheet)
 
@@ -187,6 +196,7 @@ Espresso Koltin DSL：
  - [https://github.com/agoda-com/Kakao](https://github.com/agoda-com/Kakao)
 
 app/build.gradle 依赖配置
+
 ``` groovy
 dependencies {
     androidTestImplementation 'com.schibsted.spain:barista:3.2.0'
@@ -214,6 +224,7 @@ assertDisplayedAtPosition(R.id.list, 0, R.id.text_field, "text");
 让`androidTest`中的espresso测试可以放到`test`中执行。
 
 app/build.gradle中的配置，参考：[https://medium.com/androiddevelopers/write-once-run-everywhere-tests-on-android-88adb2ba20c5](https://medium.com/androiddevelopers/write-once-run-everywhere-tests-on-android-88adb2ba20c5)
+
 ```groovy
 android {
     testOptions {
@@ -232,74 +243,11 @@ dependencies {
 ```
 
 不支持 API level 29 的解决方法，参考：[http://robolectric.org/configuring/](http://robolectric.org/configuring/)
+
 ```properties
 # src/test/resources/com/mycompany/app/robolectric.properties
 sdk=28
 ```
 
-## Espresso RecyclerViewMatcher
-
-```
-import android.content.res.Resources
-import androidx.recyclerview.widget.RecyclerView
-import android.view.View
-
-import org.hamcrest.Description
-import org.hamcrest.Matcher
-import org.hamcrest.TypeSafeMatcher
-
-/**
- * taken from https://gist.github.com/baconpat/8405a88d04bd1942eb5e430d33e4faa2
- * license MIT
- */
-class RecyclerViewMatcher(private val recyclerViewId: Int) {
-
-    fun atPosition(position: Int): Matcher<View> {
-        return atPositionOnView(position, -1)
-    }
-
-    private fun atPositionOnView(position: Int, targetViewId: Int): Matcher<View> {
-        return object : TypeSafeMatcher<View>() {
-            var resources: Resources? = null
-            var childView: View? = null
-
-            override fun describeTo(description: Description) {
-                var idDescription = Integer.toString(recyclerViewId)
-                if (this.resources != null) {
-                    idDescription = try {
-                        this.resources!!.getResourceName(recyclerViewId)
-                    } catch (var4: Resources.NotFoundException) {
-                        "$recyclerViewId (resource name not found)"
-                    }
-                }
-
-                description.appendText("RecyclerView with id: $idDescription at position: $position")
-            }
-
-            public override fun matchesSafely(view: View): Boolean {
-
-                this.resources = view.resources
-
-                if (childView == null) {
-                    val recyclerView = view.rootView.findViewById<RecyclerView>(recyclerViewId)
-                    if (recyclerView?.id == recyclerViewId) {
-                        val viewHolder = recyclerView.findViewHolderForAdapterPosition(position)
-                        childView = viewHolder?.itemView
-                    } else {
-                        return false
-                    }
-                }
-
-                return if (targetViewId == -1) {
-                    view === childView
-                } else {
-                    val targetView = childView?.findViewById<View>(targetViewId)
-                    view === targetView
-                }
-            }
-        }
-    }
-}
-```
 
 [返回](./index.md)
