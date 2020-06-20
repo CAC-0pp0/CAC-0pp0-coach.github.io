@@ -30,6 +30,49 @@ permalink: /references/
 
 # 练习使用的工具速查
 
+## image_url BindingAdapter 实现
+
+[https://developer.android.com/topic/libraries/data-binding/binding-adapters](https://developer.android.com/topic/libraries/data-binding/binding-adapters)
+
+DataBindingAdapters.kt
+```kotlin
+package com.cac.baseproject.binding
+
+import android.widget.ImageView
+import androidx.databinding.BindingAdapter
+import androidx.lifecycle.LiveData
+import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
+import com.cac.baseproject.NewsListAdapter
+import com.cac.baseproject.R
+import com.cac.baseproject.model.News
+
+@Suppress("NAME_SHADOWING")
+@BindingAdapter("image_url")
+fun bindImageViewUrl(imageView: ImageView, thumbnailUrl: String?) {
+    Glide.with(imageView).load(thumbnailUrl).placeholder(R.color.colorPrimary).into(imageView)
+}
+```
+
+item_news.xml
+```xml
+<ImageView
+    android:id="@+id/iv_thumbnail_0"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:visibility="@{news.thumbnailUrls.size() > 0 ? View.VISIBLE : View.GONE}"
+    app:image_url="@{news.thumbnailUrls.size() > 0 ? news.thumbnailUrls.get(0) : null}"/>
+
+<ImageView
+    android:id="@+id/iv_thumbnail_1"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:visibility="@{news.thumbnailUrls.size() > 1 ? View.VISIBLE : View.GONE}"
+    app:image_url="@{news.thumbnailUrls.size() > 1 ? news.thumbnailUrls.get(1) : null}" />
+```
+
 ## Android Jetpack Library 速查
 
 [https://developer.android.com/jetpack/androidx/versions](https://developer.android.com/jetpack/androidx/versions)
