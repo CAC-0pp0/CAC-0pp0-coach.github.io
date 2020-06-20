@@ -1,4 +1,4 @@
-...:::  [培训要求](rules.md)\|[练习需求](https://cac-tech-coach.github.io/NewsClientSpecs)\|[练习API](https://cac-tech-coach.github.io/NewsClientAPI/)\|[计分规则](scoring.md)\|[积分榜](https://coda.io/d/CAC-OPPO-20200618_dyLmfn52wSV/_suVcS#_tuJ4w)\|[CI看板](http://139.198.15.19:8081/monitor?project=TLTraining-CD&minTime=2020-06-19)\|[SONAR数据](https://sonarcloud.io/organizations/cac-technnical/projects?search=CAC-)\|[参考资料](references.md)\|[讲师介绍](coaches.md)  :::...
+...:::  [培训要求](rules.md)\|[练习需求](https://cac-tech-coach.github.io/NewsClientSpecs)\|[练习API](https://cac-tech-coach.github.io/NewsClientAPI/)\|[计分规则](scoring.md)\|[积分榜](https://coda.io/d/CAC-OPPO-20200618_dyLmfn52wSV/_suVcS#_tuJ4w)\|[CI看板](http://139.198.15.19:8081/monitor?project=TLTraining-CD&minTime=2020-06-20)\|[SONAR数据](https://sonarcloud.io/organizations/cac-technnical/projects?search=CAC-)\|[参考资料](references.md)\|[讲师介绍](coaches.md)  :::...
 
 # 目标
 
@@ -8,13 +8,19 @@
 
 参训学员以小组为单位，在三天的培训时间里，根据讲师所讲收的内容和布置的任务，采用正确的技术实践完成示例项目的持续演练。在培训的最后一天下午，以小组为单位展示三天所学内容在示例项目中的运用，进行PK。最终根据小组互动表现、度量数据、以及打擂展示的[**综合得分**](scoring.md)确定[**最终排名**]()。
 
-## 2020-06-19 Master构建版本运行结果
+## 2020-06-19 22:00 Master构建版本运行结果
 
 |                                   |                              |                                  |                                 |
 | :-------------------------------: | :--------------------------: | :------------------------------: | :-----------------------------: |
 | ![](assets/chengdu/qingcheng.gif) | ![](assets/chengdu/emei.gif) | ![](assets/chengdu/longquan.gif) | ![](assets/chengdu/tiantai.gif) |
 |             QingCheng             |             EMei             |             LongQuan             |             TianTai             |
 
+## 2020-06-20 15:30  Master构建版本运行结果
+
+|                                     |                                |                                    |                                   |
+| :---------------------------------: | :----------------------------: | :--------------------------------: | :-------------------------------: |
+| ![](assets/chengdu/qingcheng-1.gif) | ![](assets/chengdu/emei-1.gif) | ![](assets/chengdu/longquan-1.gif) | ![](assets/chengdu/tiantai-1.gif) |
+|              QingCheng              |              EMei              |              LongQuan              |              TianTai              |
 
 # 准备工作
 
