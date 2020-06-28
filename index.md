@@ -8,20 +8,6 @@
 
 参训学员以小组为单位，在三天的培训时间里，根据讲师所讲收的内容和布置的任务，采用正确的技术实践完成示例项目的持续演练。在培训的最后一天下午，以小组为单位展示三天所学内容在示例项目中的运用，进行PK。最终根据小组互动表现、度量数据、以及打擂展示的[**综合得分**](scoring.md)确定[**最终排名**]()。
 
-## 2020-06-19 22:00 Master构建版本运行结果
-
-|                                   |                              |                                  |                                 |
-| :-------------------------------: | :--------------------------: | :------------------------------: | :-----------------------------: |
-| ![](assets/chengdu/qingcheng.gif) | ![](assets/chengdu/emei.gif) | ![](assets/chengdu/longquan.gif) | ![](assets/chengdu/tiantai.gif) |
-|             QingCheng             |             EMei             |             LongQuan             |             TianTai             |
-
-## 2020-06-20 15:30  Master构建版本运行结果
-
-|                                     |                                |                                    |                                   |
-| :---------------------------------: | :----------------------------: | :--------------------------------: | :-------------------------------: |
-| ![](assets/chengdu/qingcheng-1.gif) | ![](assets/chengdu/emei-1.gif) | ![](assets/chengdu/longquan-1.gif) | ![](assets/chengdu/tiantai-1.gif) |
-|              QingCheng              |              EMei              |              LongQuan              |              TianTai              |
-
 # 准备工作
 
 ## 账号
